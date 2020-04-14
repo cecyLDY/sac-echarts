@@ -1,9 +1,10 @@
-(function() { 
 
 	import * as echarts from 'echarts/lib/echarts';
 	import 'echarts/lib/chart/gauge';
 	import 'echarts/lib/component/tooltip';
 	import 'echarts/lib/component/title';
+(function() { 
+
 
 	let template = document.createElement("template");
 	template.innerHTML = `
@@ -15,7 +16,9 @@
     <div id="chart_div" style="width: 600px;height:400px;"></div>
 	`;
 
-	class Box extends HTMLElement {
+	class EChartsGauge extends HTMLElement {
+		
+
 		constructor() {
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
