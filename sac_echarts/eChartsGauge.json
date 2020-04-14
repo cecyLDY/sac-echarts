@@ -1,6 +1,6 @@
 {
 	"id": "com.demo.echarts.gauge",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"name": "Demo echarts Gauge",
 	"description": "echart gauge demo",
 	"newInstancePrefix": "echarts Gauge",
