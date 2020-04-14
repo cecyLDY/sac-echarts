@@ -1,6 +1,9 @@
 (function() { 
-    let echarts = require('echarts');
-
+	let echarts = require('echarts/lib/echarts');
+	require('echarts/lib/chart/gauge');
+	require('echarts/lib/component/tooltip');
+	require('echarts/lib/component/title');
+	
 	let template = document.createElement("template");
 	template.innerHTML = `
     <style>
