@@ -38,7 +38,7 @@
 		
 		render(id, div) {
             
-            let myChart = echarts.init(document.getElementById(id));
+            let myChart = echarts.init(document.getElementById('container_' + id));
             myChart.setOption({
 				title: {
 					text: 'ECharts 入门示例'
