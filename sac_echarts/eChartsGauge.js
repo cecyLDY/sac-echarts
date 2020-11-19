@@ -21,7 +21,7 @@
     </style> 
     
 	`;
-	class EChartsGauge extends HTMLElement {
+	class eChartsGauge extends HTMLElement {
 		constructor() {
 			console.log("constructor");
 			super(); 
@@ -109,5 +109,5 @@
 		}
 	}
 	
-	customElements.define("com-demo-echarts-gauge", EChartsGauge);
+	customElements.define("com-demo-echarts-gauge", eChartsGauge);
 })();
