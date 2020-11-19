@@ -38,18 +38,23 @@
 		
 		render(id, div) {
             
-            let myChart = echarts.init(document.getElementById(id), null, {renderer: 'svg'});
+            let myChart = echarts.init(document.getElementById(id));
             myChart.setOption({
+				title: {
+					text: 'ECharts 入门示例'
+				},
+				tooltip: {},
+				legend: {
+					data:['销量']
+				},
 				xAxis: {
-					type: 'category',
-					data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+					data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
 				},
-				yAxis: {
-					type: 'value'
-				},
+				yAxis: {},
 				series: [{
-					data: [820, 932, 901, 934, 1290, 1330, 1320],
-					type: 'line'
+					name: '销量',
+					type: 'bar',
+					data: [5, 20, 36, 10, 10, 20]
 				}]
 			});
 		}
