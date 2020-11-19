@@ -21,13 +21,9 @@
     </style> 
     
 	`;
-
-	function draw() {
-
-	}
-
 	class EChartsGauge extends HTMLElement {
 		constructor() {
+			console.log("constructor");
 			super(); 
 			shadowRoot = this.attachShadow({mode: "open"});
 			shadowRoot.appendChild(template.content.cloneNode(true));
@@ -59,10 +55,12 @@
 		}
 		  
 		onCustomWidgetBeforeUpdate(changedProperties) {
+			console.log("onCustomWidgetBeforeUpdate");
 			this._props = { ...this._props, ...changedProperties };
 		}
 
 		onCustomWidgetAfterUpdate(changedProperties) {
+			console.log("onCustomWidgetAfterUpdate");
 			if ("value" in changedProperties) {
 				this.$value = changedProperties["value"];
 			}
@@ -74,6 +72,8 @@
 			if ("color" in changedProperties) {
 				this.$color = changedProperties["color"];
 			}
+			console.log("firsttime: " + this._firstConnection);
+
 			if (this._firstConnection === 0) {
 				const div = document.createElement("div");
 				let divid = changedProperties.widgetName;
@@ -86,7 +86,7 @@
 				shadowRoot.appendChild(css);
 				
 				let mapcanvas_divstr = shadowRoot.getElementById("container_" + divid);
-
+				console.log(mapcanvas_divstr);
 				async function LoadLibs() {
 					try {
 						await loadScript(ehcartjs);
@@ -98,7 +98,7 @@
 				}
 				LoadLibs();
 			} else {
-				
+				console.log("firsttime: " + this._firstConnection);
 			}
 			//this.render(this.$value, this.$info, this.$color);
 		}
