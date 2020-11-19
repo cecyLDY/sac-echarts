@@ -11,7 +11,7 @@
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "com-demo-charts-gauge",
+			"tag": "com-demo-echarts-gauge",
 			"url": "https://sucrez.github.io/sac-echarts/sac_echarts/eChartsGauge.js",
 			"integrity": "",
 			"ignoreIntegrity": true
