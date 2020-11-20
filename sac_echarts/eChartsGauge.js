@@ -14,14 +14,14 @@
 	let template = document.createElement("template");
 
 	template.innerHTML = `
-    <style>
+    <style type="text/css>
     :host {
         display: block;
     } 
     </style> 
     
 	`;
-	class eChartsGauge extends HTMLElement {
+	class EChartsGauge extends HTMLElement {
 		constructor() {
 			console.log("constructor");
 			super(); 
@@ -109,5 +109,5 @@
 		}
 	}
 	
-	customElements.define("com-demo-echarts-gauge", eChartsGauge);
+	customElements.define("com-echarts-gauge", EChartsGauge);
 })();
