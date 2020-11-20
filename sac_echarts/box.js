@@ -14,7 +14,7 @@
 
 	function render(id, div) {
             
-		let myChart = echarts.init(document.getElementById('container_' + id));
+		let myChart = echarts.init(div);
 		myChart.setOption({
 			title: {
 				text: 'ECharts 入门示例'
@@ -85,7 +85,7 @@
 				const div = document.createElement("div");
 				let divid = changedProperties.widgetName;
 				this._tagContainer = divid;
-				div.innerHTML = `<div id="container_${divid}" style="width: 600px;height:400px;"></div>`;
+				div.innerHTML = `<div id="container${divid}" style="width: 600px;height:400px;"></div>`;
 				shadowRoot.appendChild(div);
 
 				// const css = document.createElement('div');
