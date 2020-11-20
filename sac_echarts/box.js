@@ -85,12 +85,12 @@
 				const div = document.createElement("div");
 				let divid = changedProperties.widgetName;
 				this._tagContainer = divid;
-				div.innerHTML = '<div id="container_' + divid + '"></div>';
+				div.innerHTML = `<div id="container_${divid}" style="width: 600px;height:400px;"></div>`;
 				shadowRoot.appendChild(div);
 
-				const css = document.createElement('div');
-                css.innerHTML = '<style>#container_' + divid + ' {width: 100%; height: 500px;}</style>';
-				shadowRoot.appendChild(css);
+				// const css = document.createElement('div');
+                // css.innerHTML = '<style>#container_' + divid + ' {width: 100%; height: 500px;}</style>';
+				// shadowRoot.appendChild(css);
 				
 				let mapcanvas_divstr = shadowRoot.getElementById("container_" + divid);
 				console.log(mapcanvas_divstr);
