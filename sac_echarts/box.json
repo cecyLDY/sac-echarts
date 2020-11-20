@@ -1,6 +1,6 @@
 {
-	"id": "com.demo.echarts.gauge",
-	"version": "1.0.4",
+	"id": "com.echarts.gauge",
+	"version": "1.0.5",
 	"name": "Demo echarts Gauge",
 	"description": "echart gauge demo",
 	"newInstancePrefix": "echarts Gauge",
@@ -12,10 +12,10 @@
 		{
 			"kind": "main",
 			"tag": "com-echarts-gauge",
-			"url": "https://sucrez.github.io/sac-echarts/sac_echarts/eChartsGauge.js",
+			"url": "https://sucrez.github.io/sac-echarts/sac_echarts/box.js",
 			"integrity": "",
 			"ignoreIntegrity": true
-		}		
+		}
 	],
 	"properties": {
 		"value": {
