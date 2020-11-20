@@ -1,6 +1,6 @@
 (function() { 
 	let shadowRoot;
-	const ehcartjs = "https://github.com/sucrez/sac-echarts/echarts.min.js";
+	const ehcartjs = "https://sucrez.github.io/sac-echarts/sac_echarts/echarts.min.js";
 	function loadScript(src) {
 		return new Promise(function(resolve, reject) {
 			let script = document.createElement("script");
